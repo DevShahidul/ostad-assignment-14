@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function getPage(Request $request){
-        $page = $request->query('page', null);
+        $page = $request->page;
 
         return response()->json([
             'page' => $page,
