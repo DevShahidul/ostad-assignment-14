@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/', [PageController::class, 'getPage']); // Answer Question 3
+Route::get('/', [PageController::class, 'getPage']); // Answer of Question 3
+Route::get('/json-response', [PageController::class, 'jsResponse']); // Answer of Question 4

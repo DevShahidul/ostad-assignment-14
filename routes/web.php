@@ -20,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::post('/submit-form', [FormController::class, 'submitForm'])->name('handleSubmitForm');
+Route::get('/upload-avatar', [FormController::class, 'uploadform']);
+Route::post('/upload-avatar', [FormController::class, 'uploadAvatar']);
