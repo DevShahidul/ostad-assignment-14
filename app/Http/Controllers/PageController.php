@@ -14,4 +14,14 @@ class PageController extends Controller
         ], 200);
 
     }
+
+    public function jsResponse(Request $request){
+        return response()->json([
+            "message" => "Success",
+            "data" => [
+                "name" => "John Doe",
+                "age" => "25"
+            ]
+        ], 200);
+    }
 }
